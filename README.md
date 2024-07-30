@@ -105,7 +105,7 @@ docker compose -f airflow.yaml up
 
 Alternatively, the models are available in the repository, and a deployed model can be found on [our Huggingface]().
 
-Visualizations are accessible on [our Tableau]().
+Visualizations are accessible on [our Tableau](https://public.tableau.com/app/profile/ahmad.dani.rifai/viz/CarListing_17223143129200/Dashboard1?publish=yes).
 
 ## Conclusions & Further Improvement
 
