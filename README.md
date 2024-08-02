@@ -103,7 +103,7 @@ docker compose -f airflow.yaml up
 5. Download the cleaned data from the PostgreSQL database.
 6. Run the `modeling.ipynb` file to create the models.
 
-Alternatively, the models are available in the repository, and a deployed model can be found on [our Huggingface]().
+Alternatively, the models are available in the repository, and a deployed model can be found on [our Huggingface](https://huggingface.co/spaces/vickybelario/project01).
 
 Visualizations are accessible on [our Tableau](https://public.tableau.com/app/profile/ahmad.dani.rifai/viz/CarListing_17223143129200/Dashboard1?publish=yes).
 
