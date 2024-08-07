@@ -71,7 +71,6 @@ The workflow is divided into three main phases, each assigned to different roles
 - **Docker**: Containerization to ensure reproducibility of the data pipeline.
 - **Apache Airflow**: Orchestration and automation of the data pipeline.
 - **PostgreSQL**: Data storage and retrieval.
-- **K-Means Clustering**: Used for building and training the customer segmentation model.
 - **Python**: Primary programming language for data processing, analysis, and modeling.
 - **Streamlit & Huggingface**: Building an application for the model and recommender system.
 
