@@ -1,115 +1,73 @@
-<a name="readme-top"></a>
+![img](https://miro.medium.com/v2/resize:fit:1400/1*iGdFJTHMIG79N2HChWaooQ.gif)
 
-<div align='center'>
-  <h1><b>Comprehensive Used Car Listings And Recommendation System</b></h1>
-  <img src='FINAL-PROJECT/cars1.png'/>
-  <br><br>
-  <p>This project is focused on creating a Natural Language Processing (LLM) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
-  <br>
-</div>
+<center>
+
+<h1>AutoBuddy</h1>
+
+### **Chatbot for Customer Service and Vehicle Recommender**
 
 ---
 
-## FTDS-017-HCK-group-001
+</center>
 
-**Team Members**:
+<br />
+<br />
 
-1. Michael Parsaoran (Data Scientist)
-2. Ahmad Dani Rifai (Data Analyst)
-3. Muhammad Fiqih Al-Ayubi (Data Engineer - )
-4. Vicky Belario (Data Scientist - )
+## **Project Background**
 
-## Project Overview
+Based on research conducted by Forbes, companies that use chatbots as a tool to interact with users see an average increase of 67 percent in revenue. Additionaly, according to a survey conducted by [Intercom](https://www.intercom.com/blog/the-state-of-chatbots/) with 500 business leaders, the use of chatbots can increase customer satisfaction by 24 percent.
 
-This project focuses on performing segmentation analysis on e-commerce sales data. By employing K-Means Clustering, the objective is to segment customers effectively, providing insights for a recommender system application that tailors product recommendations to each cluster. Moreover, the project aims to assist the marketing team in crafting targeted campaigns for each segment, ultimately enhancing sales and revenue.
+According to research conducted by the website Kindly, chatbots can be a potential tool to use in increasing revenue because chatbots can improve customer experience, customer life time value (LTV), and average order value by providing 24/7 services in the form of product recommendations and customer service. This is especially true for e-commerce companies where according to research conducted by tidio, 77% of companies that successfully utilize chatbots are from e-commerce companies.
 
-## Background
+## **Objective**
+Create a chatbot application (Virtual Shopping Assistance) that can provide 24/7 customer service and can provide product recommendations to increase revenue based on customer experience, LTV, and AOV variables.
 
-### Problem Statement
+## **Why Carsome?**
 
-The dataset provides a comprehensive list of used cars with various attributes and features. The challenge is to extract meaningful insights and patterns from this data to help potential buyers make informed decisions. The key problems to address include identifying factors that influence car prices, understanding the distribution of car features, and determining the impact of different attributes on monthly installment amounts.
+Carsome itself is Southeast Asia's largest integrated car e-commerce platform. We choose the brand because of it's commitment to digitalize used car industries in countries such as Malaysia, Indonesia, Thailand, and Singapore by reshaping and elevating the car buying and selling experience. Carsome provides end-to-end solutions to consumers and used car dealers, from car inspection to ownership transfer to financing, promising a service that is trusted, convenient and efficient.
 
-### Objectives
+## **Team Members**
 
-- Determine the primary factors influencing the price of used cars.
-- Analyze the distribution and frequency of different car features (e.g., rear camera, sunroof).
-- Examine the relationship between car attributes (e.g., brand, year, mileage) and their corresponding monthly installment amounts.
-- Provide data-driven insights to assist potential buyers in evaluating and comparing used cars based on their preferences and budget.
-- Identify any trends or patterns in the location of car listings and their features.
 
-### Dataset
+1. [M. Fiqih Al-Ayubi](https://github.com/mfiqihalayubi) **(Data Engineer)**   
+2. [Michael P.](https://github.com/mikepars) **(Data Scientist)**   
+3. [Vicky Belario](https://github.com/vickybelario) **(Data Scientist)**   
+4. [Ahmad Dani Rifai](https://github.com/dhans11) **(Data Analyst)**
 
-The dataset used in this project is sourced from Kaggle.com, uploaded by Carrie. It can be accessed [here](https://www.kaggle.com/datasets/indraputra21/used-car-listings-in-indonesia/data).
 
-## Project Structure
+## **Conclusion**
 
-### Workflow
+We created and tested 3 models, which is:
+1. Base model (Using two separate model based on user prompt)
+2. Retrieval Chain Method
+3. Conversational Retrieval Chain
 
-The workflow is divided into three main phases, each assigned to different roles:
+And based on the evaluation results, the model using the Conversational Retrieval Chain (CRC) method is the most superior and recommended for implementation as part of the Autobuddy chatbot.
 
-#### Data Engineering
+<center>
 
-- **Raw Data Loading**: Set up Apache Airflow DAG to load and store raw data in Postgres.
-- **Fetch Data & Data Preprocessing**: Retrieve raw data from Postgres and preprocess it into cleaned data.
-- **Clean Data Loading**: Store the cleaned data back into Postgres.
+---
 
-#### Data Analysis
+![img](https://i.imgur.com/4GuLBBA.png)
+#### Conversational Retrieval Chain (CRC) Workflow
 
-- **Data Interpretation**: Analyze the cleaned data to extract insights.
-- **Visualization**: Create visual representations of the analysis for easier interpretation and presentation on Tableau.
-- **Reporting**: Compile findings and insights into a comprehensive report.
+---
 
-#### Data Science
+</center>
 
-- **Model Development**:
-- **Model Optimization**:
-- **Recommender System**:
-- **Model Deployment**: Build an application that integrates the developed models to automate customer segmentation and product recommendations.
+This model offers high accuracy and the best performance in handling both FAQs and car recommendation questions. Adopting the CRC model is expected to significantly enhance the user experience on the Carsome platform.
 
-## Tools
+## **Business Recommendation**
 
-- **Docker**: Containerization to ensure reproducibility of the data pipeline.
-- **Apache Airflow**: Orchestration and automation of the data pipeline.
-- **PostgreSQL**: Data storage and retrieval.
-- **Python**: Primary programming language for data processing, analysis, and modeling.
-- **Streamlit & Huggingface**: Building an application for the model and recommender system.
+1. Increase the amount of FAQ data to improve the model's ability to answer specific questions related to administrative aspects.    
+2. We would recommended to use stream processing methods to handle the data of cars sold on the platform so that the model can always receive updated data in real-time.
 
-## Setup and Installation
+## **Room for Improvement**
 
-To replicate this project, ensure you have the following prerequisites:
+1. Adding more features to the car dataset, such as user reviews, ratings, and historical sales data, can help the model provide more accurate and relevant recommendations.
+2. Implementing deeper contextual understanding techniques, such as using transformer-based models like BERT.
+3. Applying a feedback loop mechanism where users can provide direct feedback on the chatbot's answer quality, which can be used to continuously train and refine the model.
 
-1. Dataset files, downloadable [here](#dataset).
-2. Docker.
-3. Python.
-4. Environment Configuration: `.env` file for the Airflow containers to access PostgreSQL.
-
-To replicate the project:
-
-1. Clone this repository:
-
-```bash
-git clone git@github.com:FTDS-assignment-bay/p2-final-project-ftds-017-hck-group-01.git
-```
-
-2. Compose the containers:
-
-```bash
-docker compose -f airflow.yaml up
-```
-
-3. Access the Airflow webserver and set up the database credentials for PostgreSQL.
-4. Trigger the DAG.
-5. Download the cleaned data from the PostgreSQL database.
-6. Run the `modeling.ipynb` file to create the models.
-
-Alternatively, the models are available in the repository, and a deployed model can be found on [our Huggingface](https://huggingface.co/spaces/vickybelario/project01).
-
-Visualizations are accessible on [our Tableau](https://public.tableau.com/app/profile/ahmad.dani.rifai/viz/CarListing_17223143129200/Dashboard1?publish=yes).
-
-## Conclusions & Further Improvement
-
-The project's outcome provides valuable insights and solutions, although there is room for further development:
-
-**Conclusion & Business Recommendations**
-
-**Further Improvements**
+### [**Deployment Demo**](https://drive.google.com/file/d/18srgZGhkPxruex62RCXlwg3URjR7Puq8/view?usp=sharing)
+### [**Tableau**](https://public.tableau.com/app/profile/ahmad.dani.rifai/viz/CarListing_17223143129200/Dashboard1?publish=yes)
+### [**Hugging Face**](https://huggingface.co/spaces/vickybelario/project01)
