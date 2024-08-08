@@ -29,7 +29,7 @@ Carsome itself is Southeast Asia's largest integrated car e-commerce platform. W
 ## **Team Members**
 
 
-1. [M. Fiqih Al-Ayubi](https://github.com/mfiqihalayubi) **(Data Engineer)**   
+1. [M. Fiqih Al-Ayubi](https://github.com/mfiqihalayubi) **(Data Engineer - Data Scientist)**   
 2. [Michael P.](https://github.com/mikepars) **(Data Scientist)**   
 3. [Vicky Belario](https://github.com/vickybelario) **(Data Scientist)**   
 4. [Ahmad Dani Rifai](https://github.com/dhans11) **(Data Analyst)**
